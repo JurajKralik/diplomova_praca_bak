@@ -37,30 +37,38 @@ def save_transcription(
 
 
 def transcribe_file(model_choice, audio_path, file_name):
-    if model_choice == "Google":
-        model = SpeechRecognitionModel(model="google")
-    elif model_choice == "Whisper":
-        model = SpeechRecognitionModel(model="whisper")
-    elif model_choice == "Sphinx":
-        model = SpeechRecognitionModel(model="sphinx")
-    elif model_choice == "Whisper_openai":
-        model = WhisperModel()
-    elif model_choice == "Wav2Vec_large":
-        model = Wav2Vec2Model(model_variant="large")
-    elif model_choice == "Wav2Vec_base":
-        model = Wav2Vec2Model(model_variant="base")
-    else:
-        raise ValueError("Invalid model choice.")
+    try:
+        if model_choice == "Google":
+            model = SpeechRecognitionModel(model="google")
+        elif model_choice == "Whisper":
+            model = SpeechRecognitionModel(model="whisper")
+        elif model_choice == "Sphinx":
+            model = SpeechRecognitionModel(model="sphinx")
+        elif model_choice == "Whisper_openai":
+            model = WhisperModel()
+        elif model_choice == "Wav2Vec_large":
+            model = Wav2Vec2Model(model_variant="large")
+        elif model_choice == "Wav2Vec_base":
+            model = Wav2Vec2Model(model_variant="base")
+        else:
+            raise ValueError("Invalid model choice.")
 
-    start_time = time.time()
-    transcript = model.transcribe(audio_path)
-    elapsed_time = time.time() - start_time
-    return {
-        "file_name": file_name,
-        "transcript": transcript,
-        "time_taken": elapsed_time,
-    }
-
+        start_time = time.time()
+        transcript = model.transcribe(audio_path)
+        elapsed_time = time.time() - start_time
+        return {
+            "file_name": file_name,
+            "transcript": transcript,
+            "time_taken": elapsed_time,
+        }
+    except Exception as e:
+        print(f"Error processing {file_name}: {e}")
+        return {
+            "file_name": file_name,
+            "transcript": None,
+            "time_taken": 0,
+            "error": str(e)
+        }
 
 def transcribe():
     audio_folder = folder_path.get()

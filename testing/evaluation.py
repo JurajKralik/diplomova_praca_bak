@@ -85,7 +85,7 @@ def compare_result(validated_tsv, result) -> dict:
 	mp3_file_name = file_name.replace(".wav", ".mp3")
 	sentence = get_sentence_for_file(validated_tsv.name, mp3_file_name)
 	transcript = result.get("transcript", "")
-	inference_time = result.get("time_taken", None)  # <- pridáme time_taken
+	inference_time = result.get("time_taken", None)
 	
 	if sentence is None or transcript is None:
 		print(f"Evaluating file: {file_name} - Missing reference or transcription.")
