@@ -1,0 +1,26 @@
+{
+    "model": "Whisper_openai",
+    "parallel_processes": 1,
+    "results": [
+        {
+            "file_name": "common_voice_en_34925858.wav",
+            "transcript": " The Sugar Bear character was popular enough to have occasional premium toys.",
+            "time_taken": 1.0759899616241455
+        },
+        {
+            "file_name": "common_voice_en_34925859.wav",
+            "transcript": " It is one of the most watched television networks in the country.",
+            "time_taken": 0.5031511783599854
+        },
+        {
+            "file_name": "common_voice_en_34925860.wav",
+            "transcript": " It could be carried and prepared by the individual soldier.",
+            "time_taken": 0.465012788772583
+        },
+        {
+            "file_name": "common_voice_en_34925870.wav",
+            "transcript": " Gadia is the nearest rural locality.",
+            "time_taken": 0.48496174812316895
+        }
+    ]
+}

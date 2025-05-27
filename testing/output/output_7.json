@@ -1,0 +1,806 @@
+{
+    "model": "Google",
+    "parallel_processes": 11,
+    "results": [
+        {
+            "file_name": "common_voice_en_34925870.wav",
+            "transcript": "katya is the nearest rural locality",
+            "time_taken": 0.9565446376800537
+        },
+        {
+            "file_name": "common_voice_en_34925877.wav",
+            "transcript": "these sets come in several variants based on titles for children",
+            "time_taken": 1.1663908958435059
+        },
+        {
+            "file_name": "common_voice_en_34925871.wav",
+            "transcript": "taxes are a tool in the adjustment of the economy",
+            "time_taken": 1.2219886779785156
+        },
+        {
+            "file_name": "common_voice_en_34925879.wav",
+            "transcript": "cause of death was metastasized carcinoma",
+            "time_taken": 1.209428310394287
+        },
+        {
+            "file_name": "common_voice_en_34925860.wav",
+            "transcript": "it could be carried and prepared by the individual soldier",
+            "time_taken": 1.2406198978424072
+        },
+        {
+            "file_name": "common_voice_en_34925880.wav",
+            "transcript": "it was shortlisted for the samuel johnson prize for the same year",
+            "time_taken": 1.2348225116729736
+        },
+        {
+            "file_name": "common_voice_en_34925904.wav",
+            "transcript": "later we join the army of a local warlord in hunan",
+            "time_taken": 1.1935198307037354
+        },
+        {
+            "file_name": "common_voice_en_34925859.wav",
+            "transcript": "it is one of the most watched television networks in the country",
+            "time_taken": 1.4175760746002197
+        },
+        {
+            "file_name": "common_voice_en_34925888.wav",
+            "transcript": "trafficers transport victims to locations with webcams and live streaming software",
+            "time_taken": 1.4916386604309082
+        },
+        {
+            "file_name": "common_voice_en_34925858.wav",
+            "transcript": "the sugar bear character was popular enough to have occasional premium toys",
+            "time_taken": 1.6961021423339844
+        },
+        {
+            "file_name": "common_voice_en_34925914.wav",
+            "transcript": "some portions have been built using burnt brick",
+            "time_taken": 0.7753148078918457
+        },
+        {
+            "file_name": "common_voice_en_34925916.wav",
+            "transcript": "as a program progressed the name was changed to voyager",
+            "time_taken": 1.0136029720306396
+        },
+        {
+            "file_name": "common_voice_en_34925905.wav",
+            "transcript": "his father robert yarborough had earlier represented chester in parliament",
+            "time_taken": 1.321589469909668
+        },
+        {
+            "file_name": "common_voice_en_34925922.wav",
+            "transcript": "io created work in the tradition of conceptual art",
+            "time_taken": 1.0480706691741943
+        },
+        {
+            "file_name": "common_voice_en_34925891.wav",
+            "transcript": "earned media often refers specifically to publicity gained through editorial influence of various kinds",
+            "time_taken": 2.380242347717285
+        },
+        {
+            "file_name": "common_voice_en_34925924.wav",
+            "transcript": "they go to some stand and eat enchiladas and tamales",
+            "time_taken": 1.0350284576416016
+        },
+        {
+            "file_name": "common_voice_en_34925923.wav",
+            "transcript": "the story was by brown megs and steven zito",
+            "time_taken": 1.1784026622772217
+        },
+        {
+            "file_name": "common_voice_en_34925918.wav",
+            "transcript": "the band continued to use the contrasting vocals in future albums",
+            "time_taken": 1.5142669677734375
+        },
+        {
+            "file_name": "common_voice_en_34925913.wav",
+            "transcript": "media accounts said that mccrory was the primary target of attacks by his rivals",
+            "time_taken": 1.6656360626220703
+        },
+        {
+            "file_name": "common_voice_en_34925915.wav",
+            "transcript": "a full facility load consists of nine vertically stacked capsules",
+            "time_taken": 1.6209993362426758
+        },
+        {
+            "file_name": "common_voice_en_34925928.wav",
+            "transcript": "camp",
+            "time_taken": 0.6313004493713379
+        },
+        {
+            "file_name": "common_voice_en_34925926.wav",
+            "transcript": "the resulting work is indeed of epic difficulty but has been recorded several times",
+            "time_taken": 1.335524082183838
+        },
+        {
+            "file_name": "common_voice_en_34925927.wav",
+            "transcript": "leonardo also achieved various honors in the kingdom of naples",
+            "time_taken": 1.1296846866607666
+        },
+        {
+            "file_name": "common_voice_en_34925939.wav",
+            "transcript": "its seat is juliet",
+            "time_taken": 0.7470386028289795
+        },
+        {
+            "file_name": "common_voice_en_34925929.wav",
+            "transcript": "in the stories they are thomas the tank engines passenger coaches",
+            "time_taken": 0.9522125720977783
+        },
+        {
+            "file_name": "common_voice_en_34925940.wav",
+            "transcript": "the subsequently turned ben face",
+            "time_taken": 0.9164152145385742
+        },
+        {
+            "file_name": "common_voice_en_34925931.wav",
+            "transcript": "in compensation the design was given a relatively heavy secondary armament",
+            "time_taken": 1.1895983219146729
+        },
+        {
+            "file_name": "common_voice_en_34925954.wav",
+            "transcript": "his sister margaret died the same year",
+            "time_taken": 0.6913163661956787
+        },
+        {
+            "file_name": "common_voice_en_34925941.wav",
+            "transcript": "indeed cancellation occurs in the standard model",
+            "time_taken": 0.9461140632629395
+        },
+        {
+            "file_name": "common_voice_en_34925952.wav",
+            "transcript": "they are not a form of professional qualification",
+            "time_taken": 0.7761390209197998
+        },
+        {
+            "file_name": "common_voice_en_34925963.wav",
+            "transcript": "this picture is also known as the hitchhiker",
+            "time_taken": 1.0517642498016357
+        },
+        {
+            "file_name": "common_voice_en_34925987.wav",
+            "transcript": "the kitty is deeply asleep",
+            "time_taken": 0.669316291809082
+        },
+        {
+            "file_name": "common_voice_en_34925966.wav",
+            "transcript": "the community also includes a washington street",
+            "time_taken": 1.2215049266815186
+        },
+        {
+            "file_name": "common_voice_en_34925978.wav",
+            "transcript": "the final exchange was also the most public",
+            "time_taken": 0.7940592765808105
+        },
+        {
+            "file_name": "common_voice_en_34925964.wav",
+            "transcript": "barnes & walker ambush three of them and see them taken into custody",
+            "time_taken": 1.4899954795837402
+        },
+        {
+            "file_name": "common_voice_en_34925976.wav",
+            "transcript": "these were dragged more than from the quarry to the river on wooden sledges",
+            "time_taken": 1.2002520561218262
+        },
+        {
+            "file_name": "common_voice_en_34925988.wav",
+            "transcript": "this outline of the story is told in the iliad",
+            "time_taken": 1.1586737632751465
+        },
+        {
+            "file_name": "common_voice_en_34925969.wav",
+            "transcript": "it is sometimes referred to as a branch of the called and canal",
+            "time_taken": 1.5761785507202148
+        },
+        {
+            "file_name": "common_voice_en_34925967.wav",
+            "transcript": "the camera is placed through the umbilical port and the abdominal cavity is inspected",
+            "time_taken": 1.652531623840332
+        },
+        {
+            "file_name": "common_voice_en_34925989.wav",
+            "transcript": "the stadium is also used regularly by the french rugby union team",
+            "time_taken": 1.2631232738494873
+        },
+        {
+            "file_name": "common_voice_en_34925997.wav",
+            "transcript": "five singles were released from hangin tough",
+            "time_taken": 0.7557737827301025
+        },
+        {
+            "file_name": "common_voice_en_34925981.wav",
+            "transcript": "built in tudor style the house is open to groups by prior arrangement",
+            "time_taken": 1.6773877143859863
+        },
+        {
+            "file_name": "common_voice_en_34925990.wav",
+            "transcript": "there are still other sites with tourism potential in the locality",
+            "time_taken": 1.3265743255615234
+        },
+        {
+            "file_name": "common_voice_en_34926000.wav",
+            "transcript": "8 were killed",
+            "time_taken": 0.6213629245758057
+        },
+        {
+            "file_name": "common_voice_en_34925991.wav",
+            "transcript": "there was much debate over the value of the book",
+            "time_taken": 1.2221581935882568
+        },
+        {
+            "file_name": "common_voice_en_34925999.wav",
+            "transcript": "he was double majoring in business and film",
+            "time_taken": 1.031057596206665
+        },
+        {
+            "file_name": "common_voice_en_34926009.wav",
+            "transcript": "the cast was led by james mason",
+            "time_taken": 0.6968173980712891
+        },
+        {
+            "file_name": "common_voice_en_34925996.wav",
+            "transcript": "this marine reserves network was established to protect whole ecosystems and restore ecosystem health",
+            "time_taken": 1.3749563694000244
+        },
+        {
+            "file_name": "common_voice_en_34925995.wav",
+            "transcript": "saint gal was founded where saint paul had settled and died",
+            "time_taken": 1.506523847579956
+        },
+        {
+            "file_name": "common_voice_en_34926008.wav",
+            "transcript": "break was a more uncertain quantity",
+            "time_taken": 1.0643587112426758
+        },
+        {
+            "file_name": "common_voice_en_34926001.wav",
+            "transcript": "around this time he appeared regularly as a soloist with american orchestras",
+            "time_taken": 1.324275255203247
+        },
+        {
+            "file_name": "common_voice_en_34926011.wav",
+            "transcript": "the group organized under the name the daughters of zion",
+            "time_taken": 0.9143457412719727
+        },
+        {
+            "file_name": "common_voice_en_34926021.wav",
+            "transcript": "they had one son pete teddlie",
+            "time_taken": 0.7429947853088379
+        },
+        {
+            "file_name": "common_voice_en_34926025.wav",
+            "transcript": "fundamentals of cost accounting",
+            "time_taken": 0.6681375503540039
+        },
+        {
+            "file_name": "common_voice_en_34926012.wav",
+            "transcript": "he glanced at alex apologetically as though craving encouragement",
+            "time_taken": 1.2736589908599854
+        },
+        {
+            "file_name": "common_voice_en_34926019.wav",
+            "transcript": "it took 19 years before this prediction was confirmed",
+            "time_taken": 1.2389471530914307
+        },
+        {
+            "file_name": "common_voice_en_34926010.wav",
+            "transcript": "a telegraph operator would translate the sounds into characters representing the telegraph message",
+            "time_taken": 1.466315507888794
+        },
+        {
+            "file_name": "common_voice_en_34926022.wav",
+            "transcript": "the northern part of the borough is close to the manchester urban area",
+            "time_taken": 1.1666345596313477
+        },
+        {
+            "file_name": "common_voice_en_34926030.wav",
+            "transcript": "but a pencil is technology",
+            "time_taken": 0.6804041862487793
+        },
+        {
+            "file_name": "common_voice_en_34926023.wav",
+            "transcript": "he also worked extensively with the national council of teachers of english",
+            "time_taken": 1.3399288654327393
+        },
+        {
+            "file_name": "common_voice_en_34926026.wav",
+            "transcript": "united states were eliminated as bebeto scored brazil's winning goal",
+            "time_taken": 1.1654818058013916
+        },
+        {
+            "file_name": "common_voice_en_34926040.wav",
+            "transcript": "i don't exactly remember",
+            "time_taken": 0.6592297554016113
+        },
+        {
+            "file_name": "common_voice_en_34926048.wav",
+            "transcript": "there is a debate about the origin of the name",
+            "time_taken": 0.631171464920044
+        },
+        {
+            "file_name": "common_voice_en_34926020.wav",
+            "transcript": "search firearms at best potentially less reliable as a result",
+            "time_taken": 1.835326910018921
+        },
+        {
+            "file_name": "common_voice_en_34926038.wav",
+            "transcript": "islamic banks remain a relatively minor force in world finance",
+            "time_taken": 1.1734678745269775
+        },
+        {
+            "file_name": "common_voice_en_34926049.wav",
+            "transcript": "he also holds german citizenship",
+            "time_taken": 0.726320743560791
+        },
+        {
+            "file_name": "common_voice_en_34926039.wav",
+            "transcript": "hirsch beagle was born in hamburg germany",
+            "time_taken": 1.1406071186065674
+        },
+        {
+            "file_name": "common_voice_en_34926047.wav",
+            "transcript": "the materials commonly used are sand pete and natural stone fiber",
+            "time_taken": 1.0590770244598389
+        },
+        {
+            "file_name": "common_voice_en_34926067.wav",
+            "transcript": "some items can help or hinder the digestion in the hero",
+            "time_taken": 0.98970627784729
+        },
+        {
+            "file_name": "common_voice_en_34926126.wav",
+            "transcript": "subsequently he was appointed district officer",
+            "time_taken": 0.6820929050445557
+        },
+        {
+            "file_name": "common_voice_en_34926078.wav",
+            "transcript": "some balance must be struck that maximizes return and minimizes risk",
+            "time_taken": 1.0300250053405762
+        },
+        {
+            "file_name": "common_voice_en_34926066.wav",
+            "transcript": "charlemagne and the other men at court were known by affectionate and jesting nicknames",
+            "time_taken": 1.421485424041748
+        },
+        {
+            "file_name": "common_voice_en_34926068.wav",
+            "transcript": "sir evelyn baring was appointed as the british controller",
+            "time_taken": 1.152001142501831
+        },
+        {
+            "file_name": "common_voice_en_34926093.wav",
+            "transcript": "she later worked as a telegraph operator for a railway",
+            "time_taken": 1.2073280811309814
+        },
+        {
+            "file_name": "common_voice_en_34926077.wav",
+            "transcript": "other common tools include stamp catalogs stamp stock books and stamp hinges",
+            "time_taken": 1.5558111667633057
+        },
+        {
+            "file_name": "common_voice_en_34926112.wav",
+            "transcript": "from a parental perspective good daycare can complement good parenting",
+            "time_taken": 1.4105494022369385
+        },
+        {
+            "file_name": "common_voice_en_34926125.wav",
+            "transcript": "horses thundered over the old wooden bridge dragging heavy engines and trucks behind them",
+            "time_taken": 1.4060773849487305
+        },
+        {
+            "file_name": "common_voice_en_34926162.wav",
+            "transcript": "but a lot of them happened very quickly",
+            "time_taken": 0.6839711666107178
+        },
+        {
+            "file_name": "common_voice_en_34926142.wav",
+            "transcript": "it depicts max awakening in an abandoned landscape while appearing injured",
+            "time_taken": 1.2680003643035889
+        },
+        {
+            "file_name": "common_voice_en_34926143.wav",
+            "transcript": "this set club members to looking for a new site",
+            "time_taken": 1.129950761795044
+        },
+        {
+            "file_name": "common_voice_en_34926115.wav",
+            "transcript": "pyruvate dehydrogenase deficiency can result from mutations in any of the enzymes or cofactors",
+            "time_taken": 1.7326276302337646
+        },
+        {
+            "file_name": "common_voice_en_34926163.wav",
+            "transcript": "nonetheless independent programmers continue to make their own games",
+            "time_taken": 1.1074962615966797
+        },
+        {
+            "file_name": "common_voice_en_34926146.wav",
+            "transcript": "her brother eric holstein competed in showing and reigned classes",
+            "time_taken": 1.2141449451446533
+        },
+        {
+            "file_name": "common_voice_en_34926191.wav",
+            "transcript": "connolly was a former montana prosecutor",
+            "time_taken": 0.8291752338409424
+        },
+        {
+            "file_name": "common_voice_en_34926192.wav",
+            "transcript": "it is owned by the indian business conglomerate wadia group",
+            "time_taken": 0.8931064605712891
+        },
+        {
+            "file_name": "common_voice_en_34926176.wav",
+            "transcript": "the church was later renamed the united church of christ",
+            "time_taken": 1.1161236763000488
+        },
+        {
+            "file_name": "common_voice_en_34926180.wav",
+            "transcript": "the other two were carlisle in pennsylvania and haskell in kansas",
+            "time_taken": 1.1837265491485596
+        },
+        {
+            "file_name": "common_voice_en_34926165.wav",
+            "transcript": "she was sobbing almost without tears profoundly and bitterly",
+            "time_taken": 1.4039480686187744
+        },
+        {
+            "file_name": "common_voice_en_34926197.wav",
+            "transcript": "don't you think so he persisted",
+            "time_taken": 0.6738417148590088
+        },
+        {
+            "file_name": "common_voice_en_34926164.wav",
+            "transcript": "the village is located mostly within the town of oconomowoc in waukesha county",
+            "time_taken": 1.6668460369110107
+        },
+        {
+            "file_name": "common_voice_en_34926145.wav",
+            "transcript": "sword armed northwestern army soldiers repelling them",
+            "time_taken": 2.060328722000122
+        },
+        {
+            "file_name": "common_voice_en_34926193.wav",
+            "transcript": "the strength of the district remains its period architecture",
+            "time_taken": 1.5175433158874512
+        },
+        {
+            "file_name": "common_voice_en_34926198.wav",
+            "transcript": "task force on youth suicide report",
+            "time_taken": 0.8805649280548096
+        },
+        {
+            "file_name": "common_voice_en_34926166.wav",
+            "transcript": "on a tops and hijacks the prototype eurocopter tiger by killing the two pilots",
+            "time_taken": 2.1172595024108887
+        },
+        {
+            "file_name": "common_voice_en_34926239.wav",
+            "transcript": "he always regarded others with great manners",
+            "time_taken": 0.7702887058258057
+        },
+        {
+            "file_name": "common_voice_en_34926238.wav",
+            "transcript": "he recently scored a hat-trick against russia",
+            "time_taken": 0.827812910079956
+        },
+        {
+            "file_name": "common_voice_en_34926214.wav",
+            "transcript": "he was a member of the editorial board for the rutherford journal",
+            "time_taken": 1.2244033813476562
+        },
+        {
+            "file_name": "common_voice_en_34926195.wav",
+            "transcript": "the logistical and engineering difficulties he encountered were abnormal because of the remote location",
+            "time_taken": 1.831756830215454
+        },
+        {
+            "file_name": "common_voice_en_34926229.wav",
+            "transcript": "the bottom of this lake is covered with a layer of liquid sulfur",
+            "time_taken": 1.153498888015747
+        },
+        {
+            "file_name": "common_voice_en_34926246.wav",
+            "transcript": "know this list is incomplete",
+            "time_taken": 0.690044641494751
+        },
+        {
+            "file_name": "common_voice_en_34926199.wav",
+            "transcript": "the councils were of various types each with a constitutional history of its own",
+            "time_taken": 1.5449285507202148
+        },
+        {
+            "file_name": "common_voice_en_34926215.wav",
+            "transcript": "candido on the match by pinfall following the blonde bombshell",
+            "time_taken": 1.3879084587097168
+        },
+        {
+            "file_name": "common_voice_en_34926247.wav",
+            "transcript": "the jackals lost in the first round",
+            "time_taken": 0.835228681564331
+        },
+        {
+            "file_name": "common_voice_en_34926227.wav",
+            "transcript": "rhodes has helped found many organizations and sits upon several board of directors",
+            "time_taken": 1.8494133949279785
+        },
+        {
+            "file_name": "common_voice_en_34926248.wav",
+            "transcript": "freestyling can also be used as a songwriting method for albums or mixtapes",
+            "time_taken": 1.2092056274414062
+        },
+        {
+            "file_name": "common_voice_en_34926249.wav",
+            "transcript": "he was the son of barrister and politician archibald fraser",
+            "time_taken": 1.2062368392944336
+        },
+        {
+            "file_name": "common_voice_en_34926271.wav",
+            "transcript": "authorization then may have come after the fact",
+            "time_taken": 1.1412699222564697
+        },
+        {
+            "file_name": "common_voice_en_34926265.wav",
+            "transcript": "no roads connect the municipality to the rest of isabella",
+            "time_taken": 1.2121281623840332
+        },
+        {
+            "file_name": "common_voice_en_34926250.wav",
+            "transcript": "the local economy is agriculturally and service industry based",
+            "time_taken": 1.4095449447631836
+        },
+        {
+            "file_name": "common_voice_en_34926273.wav",
+            "transcript": "when thrown this unfurled and acted as a tale to stabilize flight",
+            "time_taken": 1.2912991046905518
+        },
+        {
+            "file_name": "common_voice_en_34926797.wav",
+            "transcript": "the building incorporates a new public library",
+            "time_taken": 1.1652231216430664
+        },
+        {
+            "file_name": "common_voice_en_34926799.wav",
+            "transcript": "holland had in alaska song named in her honor",
+            "time_taken": 1.2089977264404297
+        },
+        {
+            "file_name": "common_voice_en_34926275.wav",
+            "transcript": "in the canton wide election they received the third highest proportion of votes",
+            "time_taken": 1.5290207862854004
+        },
+        {
+            "file_name": "common_voice_en_34926274.wav",
+            "transcript": "ungoliant means dark spider in tolkien's invented language of sindarin",
+            "time_taken": 1.7774813175201416
+        },
+        {
+            "file_name": "common_voice_en_34926808.wav",
+            "transcript": "the film has had a significant influence on popular culture",
+            "time_taken": 1.3993899822235107
+        },
+        {
+            "file_name": "common_voice_en_34926855.wav",
+            "transcript": "the settlement grew and eventually took the name of the sport",
+            "time_taken": 1.1252012252807617
+        },
+        {
+            "file_name": "common_voice_en_34926812.wav",
+            "transcript": "the approach of the elves and their song to el breathe drove off the enemy",
+            "time_taken": 1.5171594619750977
+        },
+        {
+            "file_name": "common_voice_en_34926869.wav",
+            "transcript": "the upper mandible is black the lower is yellow with a black tip",
+            "time_taken": 1.1339333057403564
+        },
+        {
+            "file_name": "common_voice_en_34926871.wav",
+            "transcript": "a number of federal and provincial government departments are located here",
+            "time_taken": 1.0081431865692139
+        },
+        {
+            "file_name": "common_voice_en_34926824.wav",
+            "transcript": "the milk is thus produced according to the tradition in the alps",
+            "time_taken": 1.321197748184204
+        },
+        {
+            "file_name": "common_voice_en_34926821.wav",
+            "transcript": "the judicial system was fair and generally humane",
+            "time_taken": 1.3884954452514648
+        },
+        {
+            "file_name": "common_voice_en_34926874.wav",
+            "transcript": "the name tagged value is still kept",
+            "time_taken": 0.9016785621643066
+        },
+        {
+            "file_name": "common_voice_en_34926814.wav",
+            "transcript": "pavel curtis at xerox parc noted that they were almost exclusively for recreational purposes",
+            "time_taken": 1.7606253623962402
+        },
+        {
+            "file_name": "common_voice_en_34926878.wav",
+            "transcript": "the original version was narrated entirely by will",
+            "time_taken": 0.9557013511657715
+        },
+        {
+            "file_name": "common_voice_en_34926870.wav",
+            "transcript": "it remains the only work of importance between the kiribati and a western language",
+            "time_taken": 1.4622299671173096
+        },
+        {
+            "file_name": "common_voice_en_34926892.wav",
+            "transcript": "i forbid it said wrong",
+            "time_taken": 0.6810297966003418
+        },
+        {
+            "file_name": "common_voice_en_34926889.wav",
+            "transcript": "seems he numbers every letter he writes",
+            "time_taken": 0.8818261623382568
+        },
+        {
+            "file_name": "common_voice_en_34926880.wav",
+            "transcript": "he was descended from the banking family of frankfort",
+            "time_taken": 1.2461678981781006
+        },
+        {
+            "file_name": "common_voice_en_34926895.wav",
+            "transcript": "i dedicate more time now than ever to study",
+            "time_taken": 0.9126322269439697
+        },
+        {
+            "file_name": "common_voice_en_34926906.wav",
+            "transcript": "instead he protested i am better than he",
+            "time_taken": 0.7500298023223877
+        },
+        {
+            "file_name": "common_voice_en_34926894.wav",
+            "transcript": "it is the most expensively investigated terrestrial isopod species",
+            "time_taken": 1.1160697937011719
+        },
+        {
+            "file_name": "common_voice_en_34926907.wav",
+            "transcript": "i'm sending you on a dangerous mission",
+            "time_taken": 0.7907726764678955
+        },
+        {
+            "file_name": "common_voice_en_34926883.wav",
+            "transcript": "a by-election was held to replace him the winner was linda arkley",
+            "time_taken": 1.575357437133789
+        },
+        {
+            "file_name": "common_voice_en_34926893.wav",
+            "transcript": "the minaret was constructed with mughal architectural style",
+            "time_taken": 1.4713249206542969
+        },
+        {
+            "file_name": "common_voice_en_34926908.wav",
+            "transcript": "collaborations can be set up with anyone in the world",
+            "time_taken": 0.8028192520141602
+        },
+        {
+            "file_name": "common_voice_en_34926898.wav",
+            "transcript": "every member in the rock band kiss guest starred in the episode as themselves",
+            "time_taken": 1.4045710563659668
+        },
+        {
+            "file_name": "common_voice_en_34926905.wav",
+            "transcript": "goldsmith and signed his first publishing deal with rondo music",
+            "time_taken": 1.5054090023040771
+        },
+        {
+            "file_name": "common_voice_en_34926926.wav",
+            "transcript": "both were short-lived",
+            "time_taken": 0.6082203388214111
+        },
+        {
+            "file_name": "common_voice_en_34926919.wav",
+            "transcript": "he also wrote new hymns",
+            "time_taken": 0.7554569244384766
+        },
+        {
+            "file_name": "common_voice_en_34926914.wav",
+            "transcript": "amazon stone or amazonite is a green variety of microcline",
+            "time_taken": 1.0705950260162354
+        },
+        {
+            "file_name": "common_voice_en_34926909.wav",
+            "transcript": "the structural consultancy of the project is being provided by archetype group of france",
+            "time_taken": 1.4421300888061523
+        },
+        {
+            "file_name": "common_voice_en_34926911.wav",
+            "transcript": "wallet wheaton he roomed with ian escalon of all-star united",
+            "time_taken": 1.4012963771820068
+        },
+        {
+            "file_name": "common_voice_en_34926915.wav",
+            "transcript": "the two cereals are both sweetened puffed wheat",
+            "time_taken": 1.1175951957702637
+        },
+        {
+            "file_name": "common_voice_en_34926912.wav",
+            "transcript": "granulomas and multinucleated giant cells may be seen",
+            "time_taken": 1.3674614429473877
+        },
+        {
+            "file_name": "common_voice_en_34926913.wav",
+            "transcript": "the austrian federal railways has had two discrete periods of existence",
+            "time_taken": 1.4427392482757568
+        },
+        {
+            "file_name": "common_voice_en_34926924.wav",
+            "transcript": "smolensky is the nearest rural locality",
+            "time_taken": 1.2792344093322754
+        },
+        {
+            "file_name": "common_voice_en_34926930.wav",
+            "transcript": "actress mae marsh was his aunt",
+            "time_taken": 0.9008276462554932
+        },
+        {
+            "file_name": "common_voice_en_34926927.wav",
+            "transcript": "chorus mother is jewish and his father was of swedish descent",
+            "time_taken": 1.6871669292449951
+        },
+        {
+            "file_name": "common_voice_en_34926931.wav",
+            "transcript": "independence park stadium a tiny public baseball stadium is also close by",
+            "time_taken": 1.0380785465240479
+        },
+        {
+            "file_name": "common_voice_en_34926928.wav",
+            "transcript": "on city council she mostly concerned herself with law and order issues",
+            "time_taken": 1.536297082901001
+        },
+        {
+            "file_name": "common_voice_en_34926940.wav",
+            "transcript": "the girl breaks the sack",
+            "time_taken": 0.8760538101196289
+        },
+        {
+            "file_name": "common_voice_en_34926929.wav",
+            "transcript": "he replied i have never formed or been a member of such organizations",
+            "time_taken": 1.3535723686218262
+        },
+        {
+            "file_name": "common_voice_en_34926934.wav",
+            "transcript": "it is a routine way of developing new properties for new materials",
+            "time_taken": 1.3149890899658203
+        },
+        {
+            "file_name": "common_voice_en_34926939.wav",
+            "transcript": "its position on the river orwell has proved important in its history and development",
+            "time_taken": 1.4650216102600098
+        },
+        {
+            "file_name": "common_voice_en_34926938.wav",
+            "transcript": "he was the chairman of the association of physicians in trumanov for many years",
+            "time_taken": 1.6000382900238037
+        },
+        {
+            "file_name": "common_voice_en_34926941.wav",
+            "transcript": "joe bob briggs of united press international awarded the film one star",
+            "time_taken": 1.2597391605377197
+        },
+        {
+            "file_name": "common_voice_en_34926943.wav",
+            "transcript": "the historical valuable buildings are of national interest",
+            "time_taken": 1.0021767616271973
+        },
+        {
+            "file_name": "common_voice_en_34926933.wav",
+            "transcript": "he worked with former washington redskins tight end rick walker and producer chuck sapienza",
+            "time_taken": 1.9260103702545166
+        },
+        {
+            "file_name": "common_voice_en_34926949.wav",
+            "transcript": "units of volume are the cubes of units of length",
+            "time_taken": 0.9971051216125488
+        },
+        {
+            "file_name": "common_voice_en_34926950.wav",
+            "transcript": "he also went to hebrew school",
+            "time_taken": 1.0293314456939697
+        }
+    ]
+}

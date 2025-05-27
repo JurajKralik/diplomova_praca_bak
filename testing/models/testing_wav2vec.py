@@ -1,10 +1,12 @@
 import librosa
 import torch
 from transformers import Wav2Vec2ForCTC, Wav2Vec2Processor
+import logging
 
 
 class Wav2Vec2Model:
     def __init__(self, model_variant: str = "large"):
+        logging.getLogger("torch").setLevel(logging.ERROR)
         if model_variant == "large":
             model_name = "facebook/wav2vec2-large-960h-lv60-self"
         elif model_variant == "base":

@@ -4,6 +4,7 @@ class SpeechRecognitionModel:
     def __init__(self, model:str = "google"):
         self.recognizer = speech_recognition.Recognizer()
         self.model = model
+        print(f"Using model: {self.model}")
 
     def transcribe(self, file: str) -> str:
         with speech_recognition.AudioFile(file) as source:

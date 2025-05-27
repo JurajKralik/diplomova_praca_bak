@@ -63,11 +63,6 @@ def get_file_paths() -> tuple:
 
 	return validated_tsv, result_json, output_json_path
 
-def get_results(result_json):
-	with open(result_json.name, "r", encoding="utf-8") as json_file:
-		data = json.load(json_file)
-	return data.get("results", [])
-
 def substitute_symbols(text):
 	for symbol, word in SUBSTITUTIONS.items():
 		text = text.replace(symbol, f" {word} ")
@@ -118,7 +113,14 @@ def compare_result(validated_tsv, result) -> dict:
 if __name__ == "__main__":
 	validated_tsv, result_json, output_json_path = get_file_paths()
 
-	results = get_results(result_json)
+	with open(result_json.name, "r", encoding="utf-8") as full_file:
+		full_data = json.load(full_file)
+
+	results = full_data.get("results", [])
+	model_name = full_data.get("model", "Unknown")
+	parallel_processes = full_data.get("parallel_processes", None)
+	total_time_taken = full_data.get("total_time_taken", None)
+
 	evaluation = []
 
 	for result in results:
@@ -128,15 +130,25 @@ if __name__ == "__main__":
 		evaluated.update(additional_info)
 		evaluation.append(evaluated)
 
+	# Calculate averages
 	wer_scores = [item["WER"] for item in evaluation if item["WER"] is not None]
 	cer_scores = [item["CER"] for item in evaluation if item["CER"] is not None]
-
 	average_wer = sum(wer_scores) / len(wer_scores) if wer_scores else 0.0
 	average_cer = sum(cer_scores) / len(cer_scores) if cer_scores else 0.0
 
-	evaluation.append({"average_WER": average_wer, "average_CER": average_cer})
+	# Final output dictionary
+	final_output = {
+		"evaluation": evaluation,
+		"summary": {
+			"model": model_name,
+			"parallel_processes": parallel_processes,
+			"total_time_taken": total_time_taken,
+			"average_WER": average_wer,
+			"average_CER": average_cer
+		}
+	}
 
 	with open(output_json_path, "w", encoding="utf-8") as outfile:
-		json.dump(evaluation, outfile, ensure_ascii=False, indent=4)
+		json.dump(final_output, outfile, ensure_ascii=False, indent=4)
 
-	print(f"Evaluation results saved to {output_json_path}")
+	print(f"\nEvaluation + summary saved to {output_json_path}")
