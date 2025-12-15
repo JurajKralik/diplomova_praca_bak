@@ -1,12 +1,13 @@
 tabulate >=0.9.0
-fairseq >=0.12.2
-torch ==2.7.0
 whisper >=1.1.10
-nvidia-cudnn-cu12 ==9.8.0.87
+nvidia-cudnn-cu12
 vosk ==0.3.45
-torch==2.1.0+cu118
-torchaudio==2.1.0+cu118
+torch
+torchaudio
 speechrecognition >=3.14.2
 jiwer >=3.1.0
 speechrecognition[pocketsphinx] >=3.14.2
 pydub >=0.25.1
+librosa
+transformers
+tkinter
