@@ -3,6 +3,8 @@ import os
 from tkinter import filedialog
 import csv
 
+validation_check = True
+
 def convert_mp3_to_wav(input_folder, output_folder):
 	os.makedirs(output_folder, exist_ok=True)
 
@@ -12,18 +14,19 @@ def convert_mp3_to_wav(input_folder, output_folder):
 	for filename in os.listdir(input_folder):
 		current_file += 1
 		if filename.endswith('.mp3'):
-			validated = False
-			# Read the validated file paths from the TSV
-			with open(validated_tsv.name, 'r', encoding='utf-8') as infile:
-				reader = csv.DictReader(infile, delimiter='\t')
-				for row in reader:
-					if row['path'].strip() == filename:
-						validated = True
-						break
+			if validation_check:
+				validated = False
+				# Read the validated file paths from the TSV
+				with open(validated_tsv.name, 'r', encoding='utf-8') as infile:
+					reader = csv.DictReader(infile, delimiter='\t')
+					for row in reader:
+						if row['path'].strip() == filename:
+							validated = True
+							break
 
-			if not validated:
-				print(f"({current_file}/{folder_size}) File not validated: {filename}")
-				continue
+				if not validated:
+					print(f"({current_file}/{folder_size}) File not validated: {filename}")
+					continue
 
 			mp3_path = os.path.join(input_folder, filename)
 			wav_filename = os.path.splitext(filename)[0] + '.wav'
@@ -47,6 +50,5 @@ if not output_path:
 
 validated_tsv = filedialog.askopenfile()
 if not validated_tsv:
-	print("No TSV file selected.")
-	exit()
+	validation_check = False
 convert_mp3_to_wav(input_path, output_path)

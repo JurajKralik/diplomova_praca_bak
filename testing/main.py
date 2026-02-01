@@ -3,16 +3,17 @@ from models.testing_whisper import WhisperModel
 from models.testing_wav2vec import Wav2Vec2Model
 import json
 import os
-import tkinter as tk
-from tkinter import filedialog
 import time
+import argparse
+import sys
 from concurrent.futures import ProcessPoolExecutor, as_completed
 
-
-def select_folder():
-    new_path = filedialog.askdirectory()
-    if new_path:
-        folder_path.set(new_path)
+try:
+    import tkinter as tk
+    from tkinter import filedialog
+    GUI_AVAILABLE = True
+except ImportError:
+    GUI_AVAILABLE = False
 
 
 def save_transcription(
@@ -56,6 +57,10 @@ def transcribe_file(model_choice, audio_path, file_name):
         start_time = time.time()
         transcript = model.transcribe(audio_path)
         elapsed_time = time.time() - start_time
+        
+        if transcript is None:
+            print(f"Warning: {file_name} returned None transcript (audio might be unclear or model couldn't process it)")
+        
         return {
             "file_name": file_name,
             "transcript": transcript,
@@ -63,6 +68,8 @@ def transcribe_file(model_choice, audio_path, file_name):
         }
     except Exception as e:
         print(f"Error processing {file_name}: {e}")
+        import traceback
+        traceback.print_exc()
         return {
             "file_name": file_name,
             "transcript": None,
@@ -70,10 +77,17 @@ def transcribe_file(model_choice, audio_path, file_name):
             "error": str(e)
         }
 
-def transcribe():
-    audio_folder = folder_path.get()
-    if not audio_folder:
-        result_text.set("Please select an audio folder.")
+def transcribe(audio_folder: str, model_choice: str, parallel_processes: int = 1):
+    """
+    Transcribe audio files from a folder using the specified model.
+    
+    Args:
+        audio_folder: Path to folder containing audio files
+        model_choice: Model to use (Google, Whisper, Sphinx, Whisper_openai, Wav2Vec_base, Wav2Vec_large)
+        parallel_processes: Number of parallel processes to use (default: 1)
+    """
+    if not audio_folder or not os.path.exists(audio_folder):
+        print(f"Error: Audio folder '{audio_folder}' does not exist.")
         return
 
     output_dir = "testing/output/output.json"
@@ -84,11 +98,12 @@ def transcribe():
         serial_number += 1
 
     print(f"Output will be saved to: {output_dir}")
-    model_choice = model_var.get()
+    print(f"Model: {model_choice}")
+    print(f"Parallel processes: {parallel_processes}")
 
     output = {
         "model": model_choice,
-        "parallel_processes": process_var.get(),
+        "parallel_processes": parallel_processes,
         "results": [],
     }
     with open(output_dir, "w", encoding="utf-8") as json_file:
@@ -102,10 +117,16 @@ def transcribe():
         if file_name.lower().endswith((".wav", ".mp3", ".flac"))
     ]
     folder_size = len(audio_files)
+    
+    if folder_size == 0:
+        print(f"No audio files found in {audio_folder}")
+        return
+
+    print(f"Found {folder_size} audio files to process")
 
     # Use multiprocessing
     futures = []
-    with ProcessPoolExecutor(max_workers=process_var.get()) as executor:
+    with ProcessPoolExecutor(max_workers=parallel_processes) as executor:
         for file_name in audio_files:
             full_path = os.path.join(audio_folder, file_name)
             futures.append(
@@ -133,15 +154,45 @@ def transcribe():
         json_file.truncate()
 
     print(f"Done! Total time taken: {total_time_taken:.2f} seconds")
+    print(f"Results saved to: {output_dir}")
+    return output_dir
 
 
-if __name__ == "__main__":
+def start_gui():
+    """Start the GUI version of the application"""
+    if not GUI_AVAILABLE:
+        print("Error: tkinter is not available. Please use CLI mode or install tkinter.")
+        return
+    
+    def select_folder():
+        new_path = filedialog.askdirectory()
+        if new_path:
+            folder_path.set(new_path)
+    
+    def transcribe_gui():
+        audio_folder = folder_path.get()
+        if not audio_folder:
+            result_text.set("Please select an audio folder.")
+            return
+        
+        model_choice = model_var.get()
+        parallel_processes = process_var.get()
+        
+        result_text.set("Processing...")
+        root.update()
+        
+        try:
+            output_file = transcribe(audio_folder, model_choice, parallel_processes)
+            result_text.set(f"Done! Results saved to: {output_file}")
+        except Exception as e:
+            result_text.set(f"Error: {str(e)}")
+    
     root = tk.Tk()
     root.title("Speech Recognition GUI")
     root.geometry("400x450")
 
     folder_path = tk.StringVar()
-    model_var = tk.StringVar(value="Model 1")
+    model_var = tk.StringVar(value="Google")
     result_text = tk.StringVar()
     padding_x = 25
 
@@ -181,8 +232,35 @@ if __name__ == "__main__":
     ).pack()
     
     # Transcribe button
-    transcribe_button = tk.Button(root, text="Transcribe", command=transcribe)
+    transcribe_button = tk.Button(root, text="Transcribe", command=transcribe_gui)
     transcribe_button.pack(pady=10)
     transcribe_button.config(width=int(padding_x/2))
+    
+    # Result label
+    result_label = tk.Label(root, textvariable=result_text, wraplength=350, fg="blue")
+    result_label.pack(pady=10)
 
     root.mainloop()
+
+
+if __name__ == "__main__":
+    # Check if any command-line arguments were provided
+    if len(sys.argv) > 1:
+        # CLI mode
+        parser = argparse.ArgumentParser(description="Transcribe audio files using various speech recognition models")
+        parser.add_argument("--folder", "-f", type=str, required=True, help="Path to folder containing audio files")
+        parser.add_argument(
+            "--model", "-m", type=str, required=True,
+            choices=["Google", "Whisper", "Sphinx", "Whisper_openai", "Wav2Vec_base", "Wav2Vec_large"],
+            help="Model to use for transcription"
+        )
+        parser.add_argument(
+            "--processes", "-p", type=int, default=1,
+            help="Number of parallel processes (default: 1)"
+        )
+        
+        args = parser.parse_args()
+        transcribe(args.folder, args.model, args.processes)
+    else:
+        # GUI mode
+        start_gui()

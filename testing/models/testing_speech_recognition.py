@@ -11,9 +11,13 @@ class SpeechRecognitionModel:
             audio = self.recognizer.record(source)
             try:
                 if self.model == "google":
-                    text: str = self.recognizer.recognize_google(audio, show_all=False)
+                    # Try Czech first, then English as fallback
+                    try:
+                        text: str = self.recognizer.recognize_google(audio, language="cs-CZ", show_all=False)
+                    except speech_recognition.UnknownValueError:
+                        text: str = self.recognizer.recognize_google(audio, language="en-US", show_all=False)
                 elif self.model == "whisper":
-                    text: str = self.recognizer.recognize_whisper(audio)
+                    text: str = self.recognizer.recognize_whisper(audio, language="czech")
                 elif self.model == "sphinx":
                     text: str = self.recognizer.recognize_sphinx(audio, show_all=False)
                 else:
@@ -22,6 +26,7 @@ class SpeechRecognitionModel:
                 text = text.lower()
             except speech_recognition.UnknownValueError:
                 # Cannot understand the audio - too noisy or unclear
+                print(f"UnknownValueError: Could not understand audio in file {file}")
                 text = None
             except Exception as e:
                 print(f"An error occurred: {e}")

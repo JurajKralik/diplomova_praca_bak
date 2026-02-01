@@ -10,4 +10,3 @@ speechrecognition[pocketsphinx] >=3.14.2
 pydub >=0.25.1
 librosa
 transformers
-tkinter
